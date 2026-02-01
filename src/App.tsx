@@ -120,7 +120,7 @@ function App() {
   const [selectedMarker, setSelectedMarker] = useState<MarkerType | null>(null);
   // Load markers from JSON file
   useEffect(() => {
-    fetch("/src/markers.json")
+    fetch("/markers.json")
       .then((res) => res.json())
       .then((data) => {
         // Ensure position is typed as [number, number]
