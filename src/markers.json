@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "position": [51.37015004994325, -0.15673842042917088],
+    "title": "Mati Pottery Studio",
+    "description": "Hand made with love.",
+    "color": "#FF6B6B",
+    "icon": "🌳"
+  },
+  {
+    "id": 2,
+    "position": [51.3705, -0.1695],
+    "title": "Coulsdon Common",
+    "description": "A beautiful natural open space with walking trails and wildlife.",
+    "color": "#FF6B6B",
+    "icon": "🌳"
+  },
+  {
+    "id": 3,
+    "position": [51.37, -0.172],
+    "title": "Farthing Downs",
+    "description": "Historic chalk downland with panoramic views of London.",
+    "color": "#45B7D1",
+    "icon": "🏔️"
+  },
+  {
+    "id": 4,
+    "position": [51.365, -0.17],
+    "title": "Happy Valley Park",
+    "description": "Scenic park perfect for hiking and nature exploration.",
+    "color": "#96CEB4",
+    "icon": "🦋"
+  },
+  {
+    "id": 5,
+    "position": [51.366, -0.164],
+    "title": "Old Coulsdon Recreation Ground",
+    "description": "Local recreation area with sports facilities and playgrounds.",
+    "color": "#4ECDC4",
+    "icon": "⚽"
+  }
+]
