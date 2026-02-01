@@ -152,7 +152,7 @@ function App() {
         setUserLocation([pos.coords.latitude, pos.coords.longitude]);
       },
       (err) => {
-        // Optionally handle error
+        console.error(err);
       },
       { enableHighAccuracy: true },
     );
