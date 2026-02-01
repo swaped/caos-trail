@@ -118,6 +118,7 @@ function FitBounds({ route }: { route: [number, number][] }) {
 function App() {
   const [markers, setMarkers] = useState<MarkerType[]>([]);
   const [selectedMarker, setSelectedMarker] = useState<MarkerType | null>(null);
+  const [mobileView, setMobileView] = useState<"list" | "map">("map");
   // Load markers from JSON file
   useEffect(() => {
     fetch("/markers.json")
@@ -207,8 +208,16 @@ function App() {
     <div className="app-container">
       {/* Main Content */}
       <main className="main-content">
+        {/* Mobile Toggle Button */}
+        <button
+          className="mobile-toggle-btn"
+          onClick={() => setMobileView(mobileView === "list" ? "map" : "list")}
+        >
+          {mobileView === "list" ? "📍 Map View" : "📋 List View"}
+        </button>
+
         {/* Sidebar with marker information */}
-        <aside className="sidebar">
+        <aside className={`sidebar ${mobileView === "list" ? "mobile-visible" : ""}`}>
           <div className="logo">
             <span className="logo-icon">🚶‍♀️</span>
             <h1>CAOS Trail</h1>
@@ -281,7 +290,7 @@ function App() {
         </aside>
 
         {/* Map Container */}
-        <div className="map-container">
+        <div className={`map-container ${mobileView === "map" ? "mobile-visible" : ""}`}>
           <MapContainer
             center={CENTER}
             zoom={14}
