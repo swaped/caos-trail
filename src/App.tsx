@@ -7,7 +7,7 @@ import {
   useMap,
 } from "react-leaflet";
 import L from "leaflet";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 // Custom icon for user location
 const userLocationIcon = L.divIcon({
   className: "custom-marker user-location-marker animated-user-marker",
@@ -119,6 +119,7 @@ function App() {
   const [markers, setMarkers] = useState<MarkerType[]>([]);
   const [selectedMarker, setSelectedMarker] = useState<MarkerType | null>(null);
   const [mobileView, setMobileView] = useState<"list" | "map">("map");
+  const markerRefs = useRef<Record<number, L.Marker>>({});
   // Load markers from JSON file
   useEffect(() => {
     fetch("/markers.json")
@@ -133,6 +134,14 @@ function App() {
         );
       });
   }, []);
+  
+  // Open popup when selectedMarker changes
+  useEffect(() => {
+    if (selectedMarker && markerRefs.current[selectedMarker.id]) {
+      const markerRef = markerRefs.current[selectedMarker.id];
+      markerRef.openPopup();
+    }
+  }, [selectedMarker]);
   const [hoveredMarker, setHoveredMarker] = useState<number | null>(null);
   const [routeInfo, setRouteInfo] = useState<{
     distance: string;
@@ -321,6 +330,11 @@ function App() {
             {markers.map((marker) => (
               <Marker
                 key={marker.id}
+                ref={(markerRef) => {
+                  if (markerRef) {
+                    markerRefs.current[marker.id] = markerRef;
+                  }
+                }}
                 position={marker.position}
                 icon={createMarkerIcon(
                   marker.color,
