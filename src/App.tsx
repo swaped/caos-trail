@@ -385,6 +385,8 @@ function App() {
           </div>
         </div>
       </main>
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e5a8572ef0e24d598015856b4637b8b2"}'>
+      </script>
     </div>
   );
 }
