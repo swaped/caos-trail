@@ -260,7 +260,10 @@ function App() {
               <div
                 key={marker.id}
                 className={`marker-card ${selectedMarker?.id === marker.id ? "active" : ""} ${hoveredMarker === marker.id ? "hovered" : ""}`}
-                onClick={() => setSelectedMarker(marker)}
+                onClick={() => {
+                  setSelectedMarker(marker);
+                  setMobileView("map");
+                }}
                 onMouseEnter={() => setHoveredMarker(marker.id)}
                 onMouseLeave={() => setHoveredMarker(null)}
                 style={{ padding: "0.5rem 0.75rem", minWidth: 0 }}
