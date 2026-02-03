@@ -147,7 +147,7 @@ function App() {
         );
       });
   }, []);
-  
+
   // Open popup when selectedMarker changes
   useEffect(() => {
     if (selectedMarker && markerRefs.current[selectedMarker.id]) {
@@ -239,7 +239,9 @@ function App() {
         </button>
 
         {/* Sidebar with marker information */}
-        <aside className={`sidebar ${mobileView === "list" ? "mobile-visible" : ""}`}>
+        <aside
+          className={`sidebar ${mobileView === "list" ? "mobile-visible" : ""}`}
+        >
           <div className="logo">
             <span className="logo-icon">🚶‍♀️</span>
             <h1>CAOS Trail</h1>
@@ -249,7 +251,6 @@ function App() {
           {routeInfo && (
             <div className="route-info-card">
               <div className="route-stat">
-                <span className="route-icon">🚶</span>
                 <div className="route-detail">
                   <span className="route-label">Total Distance</span>
                   <span className="route-value">{routeInfo.distance}</span>
@@ -315,7 +316,9 @@ function App() {
         </aside>
 
         {/* Map Container */}
-        <div className={`map-container ${mobileView === "map" ? "mobile-visible" : ""}`}>
+        <div
+          className={`map-container ${mobileView === "map" ? "mobile-visible" : ""}`}
+        >
           <MapContainer
             center={CENTER}
             zoom={16}
@@ -399,8 +402,11 @@ function App() {
           </div>
         </div>
       </main>
-      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e5a8572ef0e24d598015856b4637b8b2"}'>
-      </script>
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "e5a8572ef0e24d598015856b4637b8b2"}'
+      ></script>
     </div>
   );
 }
