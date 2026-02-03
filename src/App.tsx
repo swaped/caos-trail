@@ -56,7 +56,7 @@ style.innerHTML = `
 document.head.appendChild(style);
 
 // Center coordinates
-const CENTER: [number, number] = [51.36829, -0.16755];
+const CENTER: [number, number] = [51.37070070451733, -0.1597597879141367];
 
 // Load markers from external JSON file
 type MarkerType = {
