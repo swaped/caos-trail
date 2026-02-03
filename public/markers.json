@@ -1,42 +1,139 @@
 [
   {
     "id": 1,
-    "position": [51.37015004994325, -0.15673842042917088],
-    "title": "Mati Pottery Studio",
-    "description": "Hand made with love.",
+    "position": [51.37070070451733, -0.1597597879141367],
+    "title": "Vellium mill gallery",
+    "description": "Peter Ball, Ted Eggs, Kevin Ireland, Allen Ives, Janet Muggeride, Marie Ratnam",
     "color": "#FF6B6B",
     "icon": "🌳"
   },
   {
     "id": 2,
-    "position": [51.3705, -0.1695],
-    "title": "Coulsdon Common",
-    "description": "A beautiful natural open space with walking trails and wildlife.",
+    "position": [51.37016055275903, -0.16060621702656508],
+    "title": "Raquel Acosta",
+    "description": "Pretty Glaze",
     "color": "#FF6B6B",
     "icon": "🌳"
   },
   {
     "id": 3,
-    "position": [51.37, -0.172],
-    "title": "Farthing Downs",
-    "description": "Historic chalk downland with panoramic views of London.",
+    "position": [51.37060087682988, -0.1575371358916328],
+    "title": "Jahnavee Chitte",
+    "description": "Mati Pottery - Hand made with love.",
     "color": "#45B7D1",
-    "icon": "🏔️"
+    "icon": "🦋"
   },
   {
     "id": 4,
-    "position": [51.365, -0.17],
-    "title": "Happy Valley Park",
-    "description": "Scenic park perfect for hiking and nature exploration.",
+    "position": [51.36771988277281, -0.15656146164313453],
+    "title": "Jeanette Foley, Lyn Crush",
+    "description": "Description lorem ipsum des",
     "color": "#96CEB4",
     "icon": "🦋"
   },
   {
     "id": 5,
-    "position": [51.366, -0.164],
-    "title": "Old Coulsdon Recreation Ground",
-    "description": "Local recreation area with sports facilities and playgrounds.",
+    "position": [51.36511219566524, -0.16158252636356504],
+    "title": "Flor Ferraco",
+    "description": "Description lorem ipsum des",
+    "color": "#FF6B6B",
+    "icon": "⚽"
+  },
+  {
+    "id": 6,
+    "position": [51.36675353836982, -0.16705368432443915],
+    "title": "Angela Johnson",
+    "description": "Description lorem ipsum des",
     "color": "#4ECDC4",
+    "icon": "🦋"
+  },
+  {
+    "id": 7,
+    "position": [51.36447652748368, -0.16569974479897318],
+    "title": "The Greyhound Hotel",
+    "description": "Julie Blaney, Irene Caboni",
+    "color": "#4ECDC4",
+    "icon": "🦋"
+  },
+  {
+    "id": 8,
+    "position": [51.36233728931241, -0.16627424796915102],
+    "title": "Caroline Warwick, Barbara Andrews",
+    "description": "Description lorem ipsum des",
+    "color": "#FF6B6B",
+    "icon": "🦋"
+  },
+  {
+    "id": 9,
+    "position": [51.36267317522898, -0.16773583116533627],
+    "title": "Gallery Kairo",
+    "description": "Abel Kesteven, Keith Mountain",
+    "color": "#4ECDC4",
+    "icon": "⚽"
+  },
+  {
+    "id": 10,
+    "position": [51.35829873848757, -0.17148001210509228],
+    "title": "Hill Road Artists",
+    "description": "Rebecca Tucker, Jenny Crispin, Stathis Dimitriadis, Francis Kenny, Kate Marsden, Elly Platt",
+    "color": "#4ECDC4",
+    "icon": "⚽"
+  },
+  {
+    "id": 11,
+    "position": [51.35751849810771, -0.16768133116216127],
+    "title": "Corner Gallery",
+    "description": "Teen CAOS",
+    "color": "#FF6B6B",
+    "icon": "🦋"
+  },
+  {
+    "id": 12,
+    "position": [51.35431738458959, -0.16361518594172947],
+    "title": "Stanley Park Road Artists",
+    "description": "Claire Chandler, Julia Atkinson, Carole Baker, Anne Cady, Penny Haynes, Anthony James, Zoe Scammel",
+    "color": "#4ECDC4",
+    "icon": "⚽"
+  },
+  {
+    "id": 13,
+    "position": [51.35422731625999, -0.16678931874098052],
+    "title": "John Stillman",
+    "description": "Description lorem ipsum des",
+    "color": "#4ECDC4",
+    "icon": "⚽"
+  },
+  {
+    "id": 14,
+    "position": [51.35132692681327, -0.17022723953583221],
+    "title": "Princes Avenue Artists",
+    "description": "Maggie Penton, Neringa Paulauskyte, Penny Smith, Simon Robin Stevens",
+    "color": "#FF6B6B",
+    "icon": "⚽"
+  },
+  {
+    "id": 15,
+    "position": [51.34850167827698, -0.16383582523903656],
+    "title": "Julie Curry, Teresa Allen",
+    "description": "Description lorem ipsum des",
+    "color": "#4ECDC4",
+    "icon": "⚽"
+  },
+  {
+    "id": 16,
+    "position": [51.35210237366368, -0.183118156208497],
+    "title": "Crossways Artists",
+    "description": "Arienne Roberts, Mary-Carmen Featherstone, Marie Shirazian",
+    "color": "#4ECDC4",
+    "icon": "⚽"
+  }
+  ,
+  {
+    "id": 16,
+    "position": [51.33593639615715, -0.1689960478247391],
+    "title": "Oaks Park Artist Studios",
+    "description": "Oak Park Studio Artists list",
+    "color": "#FF6B6B",
     "icon": "⚽"
   }
 ]

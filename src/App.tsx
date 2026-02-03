@@ -69,7 +69,11 @@ type MarkerType = {
 };
 
 // Create custom colored marker icons
-const createMarkerIcon = (color: string, isActive: boolean = false) => {
+const createMarkerIcon = (
+  color: string,
+  isActive: boolean = false,
+  label?: string | number,
+) => {
   const size = isActive ? 40 : 32;
   const borderColor = isActive ? "#e53935" : "white";
   const borderWidth = isActive ? 4 : 3;
@@ -92,7 +96,15 @@ const createMarkerIcon = (color: string, isActive: boolean = false) => {
           background: rgba(255,255,255,0.3);
           border-radius: 50%;
           transform: rotate(45deg);
-        "></div>
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          color: #111827;
+          font-size: ${isActive ? 14 : 12}px;
+        ">
+          ${label ? `<span style="user-select: none;">${label}</span>` : ""}
+        </div>
       </div>
     `,
     iconSize: [size, size],
@@ -103,6 +115,7 @@ const createMarkerIcon = (color: string, isActive: boolean = false) => {
 
 // Component to fit map bounds to show all markers
 function FitBounds({ route }: { route: [number, number][] }) {
+  return; //to ignore fit map and keep zoomed in center
   const map = useMap();
 
   useEffect(() => {
@@ -305,7 +318,7 @@ function App() {
         <div className={`map-container ${mobileView === "map" ? "mobile-visible" : ""}`}>
           <MapContainer
             center={CENTER}
-            zoom={14}
+            zoom={16}
             className="map"
             scrollWheelZoom={true}
           >
@@ -343,6 +356,7 @@ function App() {
                   marker.color,
                   hoveredMarker === marker.id ||
                     selectedMarker?.id === marker.id,
+                  marker.id,
                 )}
                 eventHandlers={{
                   click: () => setSelectedMarker(marker),
